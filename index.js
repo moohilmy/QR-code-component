@@ -3,6 +3,8 @@ let btn = document.querySelector(".parent .inputSpace .inpBox .btnsubmit")
 let imgSrc = document.querySelector(".card .imgBox img")
 let intTitle = document.querySelector(".inpBox .nameinp")
 let pix = 174
+let control = document.querySelector(".parent")
+let controlBox = document.querySelector(".parent .icon") 
 intValue = int.value
 int.oninput= ()=>{
     console.log(int.value)
@@ -22,4 +24,16 @@ btn.addEventListener("click", ()=>{
         intTitle.innerHTML ="Please Enter Url"
         intTitle.style.color= "red"
     }
+})
+
+controlBox.addEventListener("click",()=>{
+    control.classList.toggle("toggle")
+    if(control.classList.contains("toggle")){
+        controlBox.classList.add("fa-chevron-up")
+        controlBox.classList.remove("fa-chevron-down")
+    }else{
+        controlBox.classList.remove("fa-chevron-up")
+        controlBox.classList.add("fa-chevron-down")
+    }
+
 })
