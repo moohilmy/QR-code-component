@@ -38,6 +38,9 @@ body{
     height: 310px;
     width: 310px;
     background-color: #2c7dfa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .card .imgBox img{
@@ -109,6 +112,7 @@ body{
     padding: 10px;
     pointer-events: none;
     font-size: 16px;
+    color: #2c7dfa;
 }
 
 .inpBox input:focus{
